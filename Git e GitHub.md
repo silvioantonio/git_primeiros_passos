@@ -123,8 +123,8 @@ $ rm -f .git
 
 
 
-[^1]: Definir o git add
-[^2]: Definir o git commit
+[^1]: Significa que existem arquivos que ainda não estão sendo monitorados pelo git (precisam ser adicionados).
+[^2]: Significa que o git ainda não realizou nenhum registro do projeto.
 
 
 
@@ -224,20 +224,55 @@ Até então fizemos os seguintes procedimentos:
 O próximo passo consiste em gravar as alterações que foram feitas. Para esse procedimento vamos utilizar o comando:
 
 ```bash
-$ git commit -m "Vai teia! Voa! Para o alto e avante teia! Shazam!? Vai vai vai vai teia vai!"
+$ git commit -m "Vai teia!"
 ```
 
 O `$git commit` aplica as alterações realizadas ou em outras palavras informa ao git que você quer gravar um registo de suas atividades naquele momento. A instrução `-m` do exemplo indica que você irá inserir uma informação que servirá de registro para aquele commit.
 
-O comentário desse exemplo foi uma mera brincadeira. É extremamente importante que seus comentários sejam relevantes para o projeto. Pois ao consultar o log de atividades os comentários irão te auxiliar a indentificar a versão desejada.
+O retorno do comando para esse caso foi:
+
+```bash
+[master (root-commit) 9f856c6] Vai teia!
+ 3 files changed, 378 insertions(+)
+ create mode 100644 Git e GitHub.md
+ create mode 100644 Guia de estudo_ Front-end.md
+ create mode 100644 Registro de Estudo Front-end.md
+```
+
+O retorno informa que 3 arquivos foram inserido e ouveram 378 inserções no registro.
+
+>  O comentário desse exemplo foi uma mera brincadeira. É extremamente importante que seus comentários sejam relevantes para o projeto. Ao consultar o log de atividades os comentários irão te auxiliar a indentificar a versão desejada.
 
 **Dica:**
 
-- O comando: `$ git commit` está para o **git** como o `ctrl+s` está para o **VisualStudio Code**.
+- O comando: `$ git commit` está para o **Git** como o `ctrl+s` está para o **VisualStudio Code**.
 - Quando usar: Sempre que necessitar criar um registro de atividade.
 - O comentário: Procure criar comentários condizente com as atividades que quer registrar.
 
+#### "Comitando" novamente
+
+Até esse ponto nós:
+
+1. Criamos um diretório
+
+2. Iniciamos o repositório ($ git init)
+
+3. Adicionamos os arquivos a serem monitorados ($git add)
+4. Criamos um registro do nosso projeto
+
+Então continuei a trabalhar nos arquivos do projeto normalente e posteriormente novamente executei o comando `git status` e tenho o seguinte retorno:
+
+
+
 ### Verificando o Log de Atividades
+
+```bash
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git e GitHub.md
+        modified:   Guia de estudo_ Front-end.md
+```
 
 
 

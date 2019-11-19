@@ -18,16 +18,13 @@ Metas:
 - [Git e GitHub - Primeiros passos](https://www.youtube.com/watch?v=4aWOj-kWpM4&list=PLmSWX0ePcw4h4Hf1nmrvIxJJ_2QjojhVC)
 
   - Série de 12 vídeos criados por [Jackson Pries](https://about.me/jacksonpires)
-
 - [Curso GIT e GITHUB - O que é GIT e GitHub ?](https://www.youtube.com/watch?v=FF1f4bKYhoo&list=PLbEOwbQR9lqzK14I7OOeREEIE4k6rjgIj)
 
   - Série de 17 vídeos criados por [José de Assis](http://191.252.201.88)
-
 - [Git How To](https://githowto.com/pt-BR)
-  
   - Um excelente guia em português com um fluxo didático muito fácil de se entender. Basta acessar o link e clicar em "Começar!".
-  
-  
+- [Comandos mais utilizados no git](https://woliveiras.com.br/posts/comandos-mais-utilizados-no-git/)
+  - Uma lista de vários comandos
 
 ### Produtos Gerados
 
