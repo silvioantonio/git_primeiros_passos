@@ -135,6 +135,8 @@ $ rm -f .git
 > 1 - Aprender a adicionar e remover arquivos do rasteramento do git
 >
 > 2 - Aprender a gravar as alterações realizadas
+>
+> 3 - Aprender a manipular o log e entender o porquê do *git add* e *git commit*
 
 Como vimos no tópico anterior, conseguimos criar o repositório, entretanto o git nos informou que naquele diretório exisitiam arquivos que não estavam sendo monitorados. Cada arquivo inserido no diretório deve ser informado ao git, para que seja monitorado.
 
@@ -279,36 +281,61 @@ $ git add .
 $ git commit -m "inserindo informações de commit"
 ```
 
+Esse processo do passo anterior deve se repetir sempre que necessário. Adicionar os arquivos desejados e "commitar" ou "registrar" as alterações.
 
+### Verificando o Log de Atividades: $git log
 
-### Verificando o Log de Atividades
+Tudo bem até aqui?
+
+Esse tópico visa encaixar algumas peças desse material. Como citado o git quarda registros de atividades do seu projeto. Podemos visualizar o log desses registros com o seguinte comando:
 
 ```bash
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   Git e GitHub.md
-        modified:   Guia de estudo_ Front-end.md
+$ git log
 ```
 
+Simples assim. Nesse caso tenho como saida o seguinte:
+
+```bash
+commit f4b97750deebda3b4df23243cdabd54fcb2dde52 (HEAD -> master)
+Author: Thiago Guimarães Tavares <thiagogmta@gmial.com>
+Date:   Tue Nov 19 14:30:47 2019 -0300
+	editando informações do commit
+
+commit a0a668fccea0fb16dbacf5dd7ad78b0b0cb9a3b2
+Author: Thiago Guimarães Tavares <thiagogmta@gmial.com>
+Date:   Tue Nov 19 14:29:42 2019 -0300
+	inserindo informações de commit
+
+commit 9f856c662ed18286322f643445c71aa6bd2c0c8b
+Author: Thiago Guimarães Tavares <thiagogmta@gmial.com>
+Date:   Tue Nov 19 12:01:54 2019 -0300
+	Vai teia!
+```
+
+Fiz três "commits" como pode ser observado na saída. Cada "commit" possui 4 linhas onde:
+
+1. Registro único de cada commit.
+2. Autor do registros lembra quando preenchemos as variáveis `user.nome` e `user.email` no capítulo 1?
+3. Data do registro
+4. Comentário que foi inserido no ato do "commit".
 
 
-git log
 
 ## 4. Resumo dos comandos
 
-$ git init
-
-$ git status
-
-$ git add <nome_do_arquivo>
-
-$ git add .
-
-$ git rm --cached <nome_do_arquivo>
-
-$ git rm --cached . -r
-
-$ git commit
-
-$ git log
+- $ git init
+  - Inicia o repositório
+- $ git status
+  - Verifica o status do repositório
+- $ git add <nome_do_arquivo>
+  - Informa um arquivo específico a ser monitorado
+- $ git add .
+  - Informa todos os arquivos do diretório a serem monitorados
+- $ git rm --cached <nome_do_arquivo>
+  - Remove um arquivo específico do monitoramento
+- $ git rm --cached . -r
+  - Remove todos os arquivos do monitoramento
+- $ git commit -m "texto para registro"
+  - Efetua o registro do projeto
+- $ git log
+  - Exibe o log de atividades
