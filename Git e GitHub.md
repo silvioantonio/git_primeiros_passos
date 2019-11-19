@@ -262,6 +262,23 @@ Até esse ponto nós:
 
 Então continuei a trabalhar nos arquivos do projeto normalente e posteriormente novamente executei o comando `git status` e tenho o seguinte retorno:
 
+```bash
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git e GitHub.md
+        modified:   Guia de estudo_ Front-end.md
+```
+
+O retorno do `git status` informa que alterações foram realizadas e ainda não foram "comitadas".
+
+Faremos um novo `add` e  `commit` para registrar as novas alterações.
+
+```bash
+$ git add .
+$ git commit -m "inserindo informações de commit"
+```
+
 
 
 ### Verificando o Log de Atividades
