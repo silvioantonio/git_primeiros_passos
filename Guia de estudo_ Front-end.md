@@ -1,13 +1,13 @@
 # Guia de estudo para: Desenvolvimento Front-End
 
-> Front-End é o assunto. O objetivo é ter um guia de estudo para o gerar o conhecimento básico sobre o assunto.
+> Front-End é o assunto. O objetivo é ter um guia de estudo para adquirir conhecimento básico sobre o tema.
 
-Esse material é um mix de: Planejamento de estudo; Registro de estudo; Banco de informações. Aqui  pretendo listar e planejar detalhadamente os tópicos a serem estudados, os produtos gerados fruto do estudo e criar registros para consultas futuras de artigos e materiais importantes.
+Esse material é um mix de: Planejamento de estudo; Registro de estudo; Banco de informações. Aqui  pretendo listar e planejar os assuntos a serem estudados; os materiais que vou utilizar para referência; os produtos gerados fruto do estudo e criar registros para consultas futuras de artigos e materiais importantes.
 
 Metas:
 
-- [ ] Ler dois livros ou 5 bons artigos técnicos sobre cada um dos tópicos.
-- [ ] Criar 5 projetos/produtos sobre cada um dos assuntos.
+- [ ] Ler um livro ou bons artigos técnicos sobre o tópico.
+- [ ] Criar ao menos dois projetos/produtos sobre cada um dos assuntos.
 - [ ] Escrever um material técnico sobre o tópico para registrar o que aprendi e contribuir com a comunidade. Esses materiais devem ser publicados na Web, seja em texto ou vídeo.
 
 ----
@@ -16,8 +16,8 @@ Metas:
 ### Referência para Estudo
 
 - [Git e GitHub - Primeiros passos](https://www.youtube.com/watch?v=4aWOj-kWpM4&list=PLmSWX0ePcw4h4Hf1nmrvIxJJ_2QjojhVC)
-
   - Série de 12 vídeos criados por [Jackson Pries](https://about.me/jacksonpires)
+
 - [Curso GIT e GITHUB - O que é GIT e GitHub ?](https://www.youtube.com/watch?v=FF1f4bKYhoo&list=PLbEOwbQR9lqzK14I7OOeREEIE4k6rjgIj)
 
   - Série de 17 vídeos criados por [José de Assis](http://191.252.201.88)

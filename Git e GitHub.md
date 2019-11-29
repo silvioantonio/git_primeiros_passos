@@ -315,9 +315,84 @@ Date:   Tue Nov 19 12:01:54 2019 -0300
 Fiz três "commits" como pode ser observado na saída. Cada "commit" possui 4 linhas onde:
 
 1. Registro único de cada commit.
-2. Autor do registros lembra quando preenchemos as variáveis `user.nome` e `user.email` no capítulo 1?
+2. Autor do registros, lembra quando preenchemos as variáveis `user.nome` e `user.email` no capítulo 1?
 3. Data do registro
 4. Comentário que foi inserido no ato do "commit".
+
+
+
+## 4. Restaurando versões
+
+>  **Meta do capítulo: **
+>
+> 1 - Aprender a retomar uma versão anterior do seu projeto.
+
+Até esse ponto conseguimos criar o repositório, inserir os arquivos e gravar. De acordo com nossos testes percorremos os seguintes estágios do git:
+
+- **committed**
+  - gravado
+  - quer dizer que o repositório foi iniciado, os arquivos inseridos e o commit realizado.
+
+- **modified**
+  - modificado
+  - Quando, após um primeiro commit, fazemos alterações no arquivo e o salvamos. Ao executar o comando `git status` recebemos a mensagem que o arquivo foi modificado.
+
+- **staged**
+  - aguardando
+  - Quando um arquivo que foi modificado foi adicionado `git add .` para que seja registrado no próximo commit.
+
+Bom, e se eu precisar restaurar meu projeto para uma das versões anteriores?
+
+O primeiro passo é saber qual a versão que você deseja retomar e para isso utilize o comando:
+
+```bash
+$ git log
+```
+
+No meu caso, como apresentado no capítulo anterior tenho a seguinte saída:
+
+```bash
+commit f4b97750deebda3b4df23243cdabd54fcb2dde52 (HEAD -> master)
+Author: Thiago Guimarães Tavares <thiagogmta@gmial.com>
+Date:   Tue Nov 19 14:30:47 2019 -0300
+	editando informações do commit
+
+commit a0a668fccea0fb16dbacf5dd7ad78b0b0cb9a3b2
+Author: Thiago Guimarães Tavares <thiagogmta@gmial.com>
+Date:   Tue Nov 19 14:29:42 2019 -0300
+	inserindo informações de commit
+
+commit 9f856c662ed18286322f643445c71aa6bd2c0c8b
+Author: Thiago Guimarães Tavares <thiagogmta@gmial.com>
+Date:   Tue Nov 19 12:01:54 2019 -0300
+	Vai teia!
+```
+
+Imaginando que eu queira retomar o projeto para o estado do primeiro commit (Vai teia!) basta copiar o código daquele commit correspondente e executar o comando:
+
+```bash
+$ git checkout 9f856c662ed18286322f643445c71aa6bd2c0c8b
+```
+
+Pronto! ao verificar o arquivo seu conteúdo foi restaurado para aquela versão correspondente ao commit. Esse processo pode ser utilizado várias vezes e a qualquer fluxo. Por exemplo, você pode restaurar o segundo ou o terceiro commit sem problema algum. Caso queira voltar para o commit mais recente, você pode utilizar seu registro atrelado ao comando `git checkout` ou simplesmente utilizar o comando:
+
+```bash
+$ git checkout master
+```
+
+Agora sabemos como navegar entre as versões do nosso projeto.
+
+
+
+## 5. Clonando um projeto
+
+
+
+$ git clone <url_do_projeto>
+
+
+
+## 6. Enviando um projeto para o GitHub
 
 
 
@@ -339,3 +414,7 @@ Fiz três "commits" como pode ser observado na saída. Cada "commit" possui 4 li
   - Efetua o registro do projeto
 - $ git log
   - Exibe o log de atividades
+- $ git checkout <numero_do_commit>
+  - Retorna a um ponto específico de commit
+- $ git checkcou master
+  - Retorna ao último commit realizado
