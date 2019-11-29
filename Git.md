@@ -1,4 +1,4 @@
-# Git e GitHub
+# Git
 
 O Git é um sistema de controle de versão e organização de código fonte. Foi inicialmente desenvolvido por Linus Torvalds para para gerir as versões do código fonte do Linux.
 
@@ -384,24 +384,7 @@ Agora sabemos como navegar entre as versões do nosso projeto.
 
 
 
-## 5. Clonando um projeto
-
-
-
-$ git clone <url_do_projeto>
-
-
-
-## 6. Enviando um projeto para o GitHub
-
-```bash
-git remote add origin https://github.com/thiagogmta/git_primeiros_passos.git
-git push -u origin master
-```
-
-
-
-## 4. Resumo dos comandos
+## 5. Resumo dos comandos
 
 - $ git init
   - Inicia o repositório
