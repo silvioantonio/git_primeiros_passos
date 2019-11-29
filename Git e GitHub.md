@@ -394,6 +394,11 @@ $ git clone <url_do_projeto>
 
 ## 6. Enviando um projeto para o GitHub
 
+```bash
+git remote add origin https://github.com/thiagogmta/git_primeiros_passos.git
+git push -u origin master
+```
+
 
 
 ## 4. Resumo dos comandos
